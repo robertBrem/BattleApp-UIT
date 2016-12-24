@@ -20,7 +20,7 @@ public class BattleAppIT {
 
     @Test
     public void shouldContainRobert(@InitialPage BattleAppPage page) {
-        String expectedToContain = "robert";
+        String expectedToContain = "Rob";
         String content = browser.getPageSource();
         assertThat(content, containsString(expectedToContain));
     }
